@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.robpercival.workey">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".OwnerForgotPassword"></activity>
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".WorkerPhoneVerification" />
+        <activity android:name=".ChatUsers" />
+        <activity
+            android:name=".OwnerWorkerChats"
+            android:theme="@style/chatTitle" />
+        <activity android:name=".OwnerWishlist" />
+        <activity android:name=".WorkerWishlist" />
+        <activity android:name=".WorkerOwnerAccess" />
+        <activity
+            android:name=".splashscreen"
+            android:theme="@style/splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".OwnerLogin" />
+        <activity android:name=".OwnerRegister" />
+        <activity android:name=".OwnerHomefeed" />
+        <activity android:name=".WorkerHomefeed" />
+        <activity android:name=".OwnerProfile" />
+        <activity android:name=".OwnerPostedAdvertisment" />
+        <activity android:name=".WorkerProfile" />
+        <activity android:name=".OwnerNewAdvertisment" />
+        <activity android:name=".OwnerWorkerAccess" />
+        <activity android:name=".OwnerPhoneVerification" />
+    </application>
+
+</manifest>

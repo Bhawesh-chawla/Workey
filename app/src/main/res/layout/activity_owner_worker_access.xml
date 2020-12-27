@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_owner_worker_access"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.robpercival.workey.OwnerWorkerAccess">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="30dp"
+
+
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ownerWorkerImage"
+                android:src="@drawable/img" />
+
+            <TextView
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="@color/textcolour"
+                android:shadowColor="@color/textShadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:id="@+id/ownerWorkerName" />
+            <TextView
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:textSize="20sp"
+                android:textColor="@color/textcolour"
+                android:shadowColor="@color/textShadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:id="@+id/ownerWorkerAge" />
+            <TextView
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:textSize="20sp"
+                android:textColor="@color/textcolour"
+                android:shadowColor="@color/textShadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:id="@+id/ownerWorkerGender" />
+            <TextView
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:textSize="20sp"
+                android:textColor="@color/textcolour"
+                android:shadowColor="@color/textShadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:paddingBottom="60dp"
+                android:id="@+id/ownerWorkerAddress" />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapechange3"
+        android:layout_marginBottom="10dp"
+        android:onClick="ToChatsOwner"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/ownerAddToWishlist"
+        android:id="@+id/workerOwnerChats"
+        android:src="@drawable/ic_baseline_chat_24" />
+    <Button
+        android:id="@+id/ownerAddToWishlist"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/shapechange"
+        android:onClick="OwnerWishlist"
+        android:layout_height="wrap_content"
+        android:text="add to wishlist" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapechange3"
+        android:layout_marginBottom="10dp"
+        android:onClick="ToWorkerCall"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/ownerAddToWishlist"
+        android:id="@+id/toWorkerCall"
+        android:src="@drawable/ic_baseline_call_24" />
+
+
+</RelativeLayout>

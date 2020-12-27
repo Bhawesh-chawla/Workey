@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkerOwnerAccess">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/workerOwnerImage"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:onClick="toOwnerShop"
+                android:layout_gravity="center_horizontal"
+
+                android:src="@drawable/map" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center_horizontal"
+                android:text="click on map to navigate to owner's shop"/>
+
+            <TextView
+
+
+                android:id="@+id/workerOwnerShopName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:shadowColor="@color/textShadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@color/textcolour"
+                android:textSize="20sp" />
+
+            <TextView
+
+
+                android:id="@+id/workerOwnerWorkDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:shadowColor="@color/textShadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@color/textcolour"
+                android:textSize="20sp" />
+
+            <TextView
+
+
+                android:id="@+id/workerOwnerWorkerDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:shadowColor="@color/textShadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@color/textcolour"
+                android:textSize="20sp" />
+
+            <TextView
+
+
+                android:id="@+id/workerOwnerSalaryRange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:shadowColor="@color/textShadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@color/textcolour"
+                android:textSize="20sp" />
+
+            <TextView
+
+
+                android:id="@+id/workerOwnerAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:shadowColor="@color/textShadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@color/textcolour"
+                android:textSize="20sp" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_gravity = "bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ToChats"
+        android:src="@drawable/ic_baseline_chat_24"
+        android:background="@drawable/shapechange3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/workerAddToWishlist"
+        android:id="@+id/ownerWorkerChats"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+       />
+        <Button
+            android:id="@+id/workerAddToWishlist"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="WorkerWishlist"
+            android:background="@drawable/shapechange"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="add to wishlist" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toOwnerCall"
+            android:onClick="ToOwnerCall"
+            android:src="@drawable/ic_baseline_call_24"
+            android:background="@drawable/shapechange3"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/workerAddToWishlist"
+            />
+</RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

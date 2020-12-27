@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_owner_phone_verification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.robpercival.workey.OwnerPhoneVerification">
+
+    <Button
+        android:id="@+id/ownerVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ownerOtp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="52dp"
+        android:alpha="0"
+        android:text="verify" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter mobile number"
+
+        android:ems="10"
+        android:layout_marginTop="66dp"
+        android:id="@+id/ownerOtpMobileNumber"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter otp"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ownerOtpMobileNumber"
+        android:layout_marginEnd="56dp"
+        android:id="@+id/ownerOtp" />
+
+    <TextView
+        android:text="Not recieved otp:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/ownerVerify"
+        android:layout_alignEnd="@+id/verifyBar" />
+
+    <TextView
+        android:text="Resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ownerVerify"
+        android:layout_toEndOf="@+id/ownerVerify"
+        android:id="@+id/ownerResendOtp" />
+
+    <ProgressBar
+        android:id="@+id/verifyBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:alpha="0" />
+
+    <Button
+        android:text="get otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity = "center_horizontal"
+        android:layout_marginTop="11dp"
+        android:id="@+id/ownerOtpButton"
+        android:onClick="get"
+        android:layout_below="@+id/textView6"
+        android:layout_toStartOf="@+id/ownerResendOtp" />
+
+</RelativeLayout>

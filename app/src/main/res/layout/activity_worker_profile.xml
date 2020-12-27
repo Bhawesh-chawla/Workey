@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_worker_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.robpercival.workey.WorkerProfile">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/workerProfileImageDisplay"
+                android:onClick="workerImageClick"
+                android:src="@drawable/img" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/workerProfileImageDisplay"
+                android:layout_alignBottom="@+id/workerProfileImageDisplay">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@android:color/black"
+                    android:alpha="0.5"
+                    android:ems="10"
+                    android:id="@+id/workerProfileFirstName" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@android:color/black"
+                    android:alpha="0.5"
+                    android:ems="10"
+                    android:id="@+id/workerProfileLastName" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@android:color/black"
+                    android:alpha="0.5"
+                    android:ems="10"
+                    android:id="@+id/workerProfileNumber" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/workerProfileImageDisplay"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="26dp">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@android:color/black"
+                    android:alpha="0.5"
+                    android:ems="10"
+                    android:id="@+id/workerProfileAge" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@android:color/black"
+                    android:alpha="0.5"
+                    android:ems="10"
+                    android:id="@+id/workerProfileGender" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@android:color/black"
+                    android:alpha="0.5"
+                    android:ems="10"
+                    android:id="@+id/workerProfileHouseNumber" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@android:color/black"
+                    android:alpha="0.5"
+                    android:ems="10"
+                    android:id="@+id/workerProfileStreet" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@android:color/black"
+                    android:alpha="0.5"
+                    android:ems="10"
+                    android:id="@+id/workerProfileArea" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@android:color/black"
+                    android:alpha="0.5"
+                    android:ems="10"
+                    android:id="@+id/workerProfileCity" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/workerProfileButton"
+                    android:text="Edit Profile"
+                    android:onClick="workerProfileUpdate"
+                    android:layout_gravity="center" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="20dp"
+                    android:alpha="0"
+                    android:hint="Enter your old password"
+                    android:ems="10"
+                    android:id="@+id/workerProfileOldPassword" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@android:color/black"
+                    android:alpha="0"
+                    android:hint="Enter your new password"
+                    android:ems="10"
+                    android:id="@+id/workerProfileNewPassword" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@android:color/black"
+                    android:alpha="0"
+                    android:hint="Confirm your new password"
+                    android:ems="10"
+                    android:id="@+id/workerProfileConfirmPassword" />
+
+                <Button
+                    android:id="@+id/workerChangePassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="WorkerChangePassword"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="change password" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

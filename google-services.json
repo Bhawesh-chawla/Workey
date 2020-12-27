@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "492556947422",
+    "firebase_url": "https://workeydemo.firebaseio.com",
+    "project_id": "workeydemo",
+    "storage_bucket": "workeydemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492556947422:android:56a0a2f5d521962f2e574f",
+        "android_client_info": {
+          "package_name": "com.robpercival.workeydemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492556947422-1t5g1qbd9ivce42cf1tf7520afn9cg4m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.robpercival.workeydemo",
+            "certificate_hash": "c2f81a7514f4323c2d165d5dccae5d21ab198b3a"
+          }
+        },
+        {
+          "client_id": "492556947422-g0fuogqhn39stcmhgncee9qgpmbo8url.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3IxId_uKze0NryodZ7Y7GmBX3YjJGiPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492556947422-g0fuogqhn39stcmhgncee9qgpmbo8url.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

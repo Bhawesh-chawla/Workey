@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/messageback">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/topLayout"
+        android:background="@color/colorPrimary">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/messageback"
+            android:id="@+id/ownerWorkerChatImage"
+            android:src="@drawable/map"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/ownerWorkerChatName"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/ownerWorkerChatImage"
+            android:layout_marginLeft="7dp"
+            android:text="abcd"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:onClick="CallDone"
+            android:src="@drawable/ic_baseline_call_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+
+            android:layout_marginTop="13dp"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/chatScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/messageUser"
+        android:layout_below="@+id/topLayout"
+        android:layout_weight="20"
+       >
+
+
+        <LinearLayout
+            android:id="@+id/chatList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapechange"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/sendMessage"
+            android:layout_margin="5dp"
+            android:layout_alignParentBottom="true"
+            android:hint="type message"
+            android:id="@+id/messageUser"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/sendMessage"
+        android:onClick="chatSend"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_baseline_send_24"
+        android:background="@drawable/shapechange4"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:alpha="0"
+        android:background="@drawable/shapechange"
+        android:progressBackgroundTint="@color/colorPrimary"
+        android:progressTint="@color/colorPrimary" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/progressText"
+        android:layout_below="@+id/progressBar"
+        android:alpha="0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Loading chats"/>
+
+
+</RelativeLayout>
